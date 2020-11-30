@@ -1,0 +1,353 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Iterative Design</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  </head>
+
+  <body>
+	<main>
+	 <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+        <a class="navbar-brand half-highlight-1" href="#" style="margin-left: 6vw;"><b><i>Name.</i></b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto" style="margin-right: 6vw;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portfolio
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://portfolio-persona.herokuapp.com/">Persona</a>
+                <a class="dropdown-item" href="https://portfolio-redesign.herokuapp.com/">Redesign</a>
+                <a class="dropdown-item" href="#">Iterative Design</a>
+                <a class="dropdown-item" href="#">Development</a>  
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          </ul>
+        </div>
+	  </nav>
+
+	  <div><img src="images/header-image.png" class="header-img" alt="redesign header image"> </div>
+
+	  <div class="container-fluid content">
+        <div class="row intro mt-5">
+          <div class="col col-12 col-lg-4 mb-5">
+            <h1 class="text-center half-highlight-4 project-name"><b>Iterative Design</b></h1>
+          </div>
+          <div class="col col-12 col-lg-8">
+			<p style="color: #444444">Iterative prototyping is an essential part of creating user interfaces. Working together with my team, we design an interface for a startup
+				called Reach.live from scratch using only their concept. We did not use anything they have already built such as logo, images, or content.</p>
+            <p>We <b>iterated on our design</b> based on feedback from classmates and an industry critic, and tested our final prototype on real users through usertesting.com.</p>
+          </div>
+        </div>
+	  </div>
+	  
+	  <div class="container-fluid sub-section fill-2">
+        <div class="row justify-content-center section-content">
+          <div class="col col-6">
+			<h4 class="mt-4 mb-3"><b><i>Company Context</i></b></h4>
+          </div>
+          <div class="col col-6">
+            <p><b>Our selected startup is <span class="half-highlight-1">Reach.live</span> and we referred to this summary from their Y-Combinator Demo:</b></p>
+            <p><i>“Lifestyle creators looking to monetize live content like yoga or cooking classes often have to resort to multiple platforms. Reach.live aims to put 
+				all of them together: storefront, scheduling, payments, subscriptions, donations, and even the video hosting.”</i></p>
+			<p><b>In our interface, we decided to highlight the three aspects below: </b></p>
+			<ol type="1" style="margin-left: 1vw;">  
+				<li><b>Discover events</b>, where users can discover and sign up for events hosted by creators in categories such as food, fitness and tech.</li> 
+				<li><b>Host events</b>, where users can host their own events and customize parameters ranging from category, time, to ticket price. </li>
+				<li><b>Event analytics</b>, where users can gain detailed insights into their earnings breakdown and data from past hosted events. 
+				</li>
+				</ol>
+			<p>Our primary target user group is <b>lifestyle creators, especially those hoping to profit from their contents and discover contents from fellow creators</b>. 
+			   Since these creators mostly produce and livestream contents on their computers, we decided to create a web interface to enable easier access and more flexible layouts.</p>
+          </div>
+        </div>
+	  </div>
+
+	<div class="container-fluid sub-section">
+		<div class="row justify-content-center section-content">
+		<h4 class="mt-4 mb-3"><b><i>Sketches</i></b></h4>
+		</div>
+
+		<div class="row justify-content-center">
+		<p class="section-content">Each member of our group drew a set of sketches for at least three different pages: home page, event page, and analytics page. Our design for the 
+			event page differed a lot. Member 4's design only showed the categories of the event to the users when they landed on the event page, and the users would find out the information 
+			about the events after they clicked on the category they are interested in. Member 1's design showed the featured events of each category on the event page. In contrast, 
+			Member 3's design only showed a list of the events of the default category, and it would present the events in other categories after users clicked on the corresponding filters. 
+			Member 2's designed the event page from the point of creators. Creators can edit event information and see attendees information on the page.</p>  
+		</div>
+
+		  <div class="row section-content justify-content-center">
+			<img src="images/all-sketches.png" alt="all sketches" class="sketch">
+		</div>
+	</div>
+
+	<div class="container-fluid sub-section fill-2">
+		<div class="row justify-content-center section-content">
+		<h4 class="mt-4 mb-3"><b><i>Wireframes</i></b></h4>
+		</div>
+
+		<div class="row section-content">
+		<p>After we finished sketching, our group had a meeting to discuss our designs and combined the sketches above into a set of wireframes.</p> 
+		<p><b>Without logging in, users could only see the Home and Explore Events pages (i.e., first and second wireframes on the left).</b> They could only 
+			see the remaining pages of the website after logging in (i.e., remaining wireframes), as we believed this design choice would prompt more users to 
+			register for the site. For a company in the startup stage, we believed having more loyal, registered users would be beneficial both in terms of scale 
+			and profitability.</p>
+		</div>
+
+		<div class="row section-content mb-5">
+			<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" 
+			src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FtUHrDEjkykNnQ9jy6kszAh%2FIterative-Design-Wireframes%3Fnode-id%3D0%253A1" allowfullscreen></iframe>	
+		</div>
+
+		<div class="row section-content">
+			<h5 class="half-highlight-1"><b>Home Page (before login)</b></h5>
+			<p>The Home page contains several vertically stacked sections, each showcasing a different aspect of the company. We all agreed that Reach.live 
+			   is a platform for creators to both host and participate in events, and strived to show this by displaying information relating to these two aspects. 
+			   These include sections of discover events, host events, monetize events, and live interactions.</p>
+		</div>
+
+		<div class="row section-content">
+			<h5 class="half-highlight-1"><b>Explore Events Page (before login)</b></h5>
+			<p>The Explore Events page shows a set of featured events under each category. We chose to present all categories on one page without using any filter 
+				or tabs because this would make the page look more straightforward and require fewer interactions, thus creating a more effortless experience for 
+				first-time users.</p>
+		</div>
+
+		<div class="row section-content">
+			<h5 class="half-highlight-1"><b>Events Page (after login)</b></h5>
+			<p>There are two sections on the Events page: <i>Discover Events</i> and <i>My Events</i>. In the Discover Events section, users would see events 
+				in the default category, and they could view events of other categories when they clicked on the corresponding tabs. We made this design 
+				choice instead of showing events from different categories all together as we believed this would help users to browse through events more easily.</p>
+		</div>
+
+		<div class="row section-content">
+			<h5 class="half-highlight-1"><b>Analytics Page (after login)</b></h5>
+			<p>The Analytics page contains a dashboard displaying a summary of important metrics, and several charts displaying detailed breakdowns of each metric. 
+				We made this design decision because we felt it was important for creators to gain insights into events they have hosted, and all of us drew an 
+				individual analytics page in our sketches.</p>
+		</div>
+
+		<div class="row section-content">
+			<h5 class="half-highlight-1"><b>Account Page (after login)</b></h5>
+			<p>The Account page enables user to view and edit important information about user profile, password, email, and payments which needs to be viewed or 
+				modified on a regular basis. </p>
+		</div>
+
+		<div class="row section-content">
+			<h5 class="half-highlight-1"><b>Host Events Pop-Up Page (after login)</b></h5>
+			<p>The popup page can be activated on all major pages as the button is located on the top of the page. We decided to put the “Host Event” button in a more 
+				obvious position for navigation and usability reasons. The page requires content creators to input basic information such as what the event is about, time 
+				of the event, and how much the event costs.</p>
+		</div>
+	</div>
+
+	<div class="container-fluid sub-section">
+		<div class="row justify-content-center section-content">
+			<h4 class="mt-4 mb-3"><b><i>High-Fidelity Prototype: Iteration 1</i></b></h4>
+		</div>
+
+		<div class="row section-content">
+			<p>Combining insights from the wireframes and branding, we then created the high-fidelity prototypes. We first decided on a visual style that would attract the 
+				target audience of Reach.live by experimenting different colour palettes and visual elements. In the end, we decided to use <span style="color: orange"><b>orange</b></span> 
+				as the theme colour because of its positive connotations and the vitality that it gives off to people. Additionally, we chose a curly font for titles to make it 
+				a more fun experience. Titles are in <span style="color: orange"><b>orange</b></span>, subtitles are in <span style="color: darkblue"><b>dark blue</b></span>, and 
+				texts are in <b>black</b>. The design choices we made are consistent for all the pages in the mockup.
+			</p>
+		</div>
+
+		<div class="row section-content mb-5">
+			<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" 
+			src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5fDkFNPQUZ4poE1YyTDwQm%2FIterative-Design-Hi-Fi-Iteration-1%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+		</div>
+
+		<div class="row section-content">
+			<p>Building on top of our wireframes, each page has the following features:</p>
+		</div>
+
+		<div class="row section-content">
+			<ol style="margin-left: 1vw;" type="1">
+				<li><b>Home Page Before User Login:</b> introduces what Reach.live is and uses images to illustrate how users can use the platform to attend events, host events, and interact with attendees.</li>
+				<li><b>Explore Events Page Before User Login:</b> enables users to quickly look at events hosted on Reach.live. The events are divided based on different categories. Events that are 
+					approaching will be prioritized and appear first. This is an important page to incentivize users to sign up given it’s a startup trying to attract first time users.</li>
+				<li><b>Home Page After User Login:</b> allows registered users to discover events, register for events, and attend events. For layout hierarchy, we put the most important information on the 
+					left. The top left of the page has a navigation bar for users to quickly navigate to the analytics page and the account page. There is also the  “My Events” section that presents all the events that a user has signed up for. </li>
+				<li><b>Host Events Pop Up:</b> the Host Event button on the Home page activates a pop up window which allows users to quickly host an event on Reach.live. For users, this design choice is easy to 
+					navigate. The “Host an Event” page has affordances that help users understand without stating it in words.</li>
+				<li><b>Analytics Page:</b> uses both qualitative and quantitative data to help creators achieve and track their goals on the platform including their cumulative earnings, streaming hours, 
+					followers, and views.</li>
+				<li><b>Account Page:</b> enables users to quickly view and change their user profile information, security settings, and payments.</li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="container-fluid fill-2 sub-section">
+		<div class="row justify-content-center section-content">
+			<h4 class="mt-4 mb-3"><b><i>High-Fidelity Prototype: Iteration 2</i></b></h4>
+		</div>
+
+		<div class="row section-content">
+			<p>During our studio, we received many suggestions that were especially helpful for our second iteration Hi-Fi Mockup. After rounds of discussions on issues brought up in the studio, 
+				we made major design changes in our new mockup by adding the following features and elements. </p>
+		</div>
+
+		<div class="row section-content">
+			<h5 class="half-highlight-1"><b>1) Logout Button</b></h5>
+				<p>During the studio, users reflected the mockup does not provide an easy way to logout and switch accounts. Therefore, in the second iteration, we designed and added a link on the 
+					navigation bar right beside the “Welcome, Emily” to provide users with an option to sign out if needed. This enhances the overall usability of the website, and provides easy access 
+					for people to switch accounts. </p>
+				<p><i>Left: first iteration; Right: second iteration</i></p>
+		</div>
+		<div class="row section-content justify-content-center"><img class="hifi" src="images/home_iterations.png" alt="events home page iteration"></div>
+
+		<div class="row section-content">
+			<h5 class="half-highlight-1"><b>2) Filter Events Dropdown Menu</b></h5>
+			<p>Another feedback was that the events page would benefit from filtering options regarding the type and time of events. Therefore, we designed 3 filter options (i.e., by type, date and 
+				start time) in the home page to help users quickly identify events that work for them.</p>
+				<ul style="margin-left: 1vw;">
+					<li><b>Date:</b> One of the most helpful critiques we received is that people prioritize dates in deciding what events to sign up for. Therefore, we added a filter and a dropdown menu 
+							for users to select the dates that they are looking to register an event for. The options range from both longer timeframes like “this month” to dates that are approaching 
+							like “today” and “tomorrow”. </li>
+					<li><b>Start Time:</b> In addition to dates, users in our studio reflect that the time in the day is also very important when they make a decision on what events to attend. For example, many 
+							people have work during the day and cannot attend events before 5pm. Also, some users prefer early morning workout events especially because of work from home due to COVID. 
+							So, we added a drop down menu with different options: “all day”, “before 7am”, “7am-noon”, “noon to 5pm”, “5-10pm”, and “after 10pm. </li>
+				</ul>
+		</div>
+		<div class="row section-content justify-content-center"><img class="hifi" src="images/events_iterations.png" alt="events dropdown filter iteration"></div>
+
+		<div class="row section-content">
+			<h5 class="half-highlight-1"><b>3) Monetization Insights</b></h5>
+			<p>People also felt a need to gain more qualitative insights about events they have hosted, in addition to the charts and pie graphs. Therefore, in the analytics page, we added an “Insight” 
+				section with the following 4 quick insights that can help the creator to quickly reflect and make better content decisions. </p>
+				<ul style="margin-left: 1vw;">
+					<li>Most Profitable Earning Component</li>
+					<li>Most Profitable Content Type</li>
+					<li>Major Follower Age Group </li>
+					<li>Most Viewed Content</li>
+				</ul>
+		</div>
+		<div class="row section-content">
+			<p><i>Left: first iteration; Right: second iteration</i></p>
+		</div>
+		<div class="row section-content justify-content-center"><img class="hifi" src="images/analytics_iterations.png" alt="analytics iteraction"></div>
+
+		<div class="row section-content">
+			<h5 class="half-highlight-1"><b>4) Events Sign-Up</b></h5>
+			<p>There was also suggestion on the sign-up function. In particular, one of our peers said that the "plus" sign was a bit hard to notice and he wasn't completely sure about
+				what that button would do. Therefore, we changed all the “plus” signs to "sign up" buttons to make them stand out so that they are more obvious to users.</p>
+			<p><i>Left: first iteration; Right: second iteration</i></p>
+		</div>
+		<div class="row section-content justify-content-center"><img class="hifi" src="images/sign_up_button_iterations.png" alt="events sign-up iteration"></div>
+			
+		<div class="row section-content">
+			<h5 class="half-highlight-1"><b>5) Accessibility</b></h5>
+			<p>We were cautious of potential accessibility issues during our design stage. Especially for the graphs on our analytics page, our team made sure that 
+				there are enough colour contrasts in the pie charts and data charts. </p>
+		</div>
+	</div>
+
+	<div class="container-fluid sub-section">
+		<div class="row justify-content-center section-content">
+			<h4 class="mt-4 mb-3 half-highlight-4"><b><i>Final Interactive Prototype</i></b></h4>
+		</div>
+		<div class="row justify-content-center section-content">
+			<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800" 
+				src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FKYSjHsu53dHPNzta8rorD4%2FReach.live%3Fnode-id%3D171%253A682%26viewport%3D125%252C-211%252C0.11030083149671555%26scaling%3Dscale-down-width" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<div class="container-fluid fill-2 sub-section">
+		<div class="row justify-content-center section-content">
+			<h4 class="mt-4 mb-3"><b><i>User Testing: Results and Analysis</i></b></h4>
+		</div>
+		
+		<div class="row section-content">
+			<p>To see how real users would interact with our website, we conducted user testing and collected feedback. Since our platform is open to anyone, we did not post any demographic requirements for 
+				test participants. We provided the users with a brief introduction of our platform and requested them to complete the task of logging into a user account and browsing through available events 
+				and account analytics. The setup of our user testing including the four required sub-tasks and post-test questions are shown below. The sub-tasks we selected are closely related to our core 
+				business function which is to allow anyone to discover, host and monetize events. </p>
+		</div>
+
+		<div class="row section-content mt-3 justify-content-center">
+			<h5 class="half-highlight-1"><b>User Testing Setup</b></h5>
+			<img class="user-testing" src="images/user_testing_setup.PNG" alt="user testing setup">
+		</div>
+
+		<div class="row section-content mt-5 justify-content-center">
+			<h5 class="half-highlight-1"><b>User Performance</b></h5>
+		</div>
+
+		<div class="row section-content mt-2 justify-content-center">
+			<p><b>Watch the following videos to see how the users performed: <a href="https://drive.google.com/drive/folders/1l5Hw-D9mv_EaB05AtJsU9fOSmI5z2r9t?usp=sharing"> User Testing</a></b></p>
+		</div>
+
+		<div class="row section-content mt-5 justify-content-center">
+			<h5 class="half-highlight-1"><b>Analysis of the Results</b></h5>
+		</div>
+
+		<div class="row section-content mt-2 justify-content-center">
+			<p>We expected the users to be able to complete the sub-tasks easily without any confusion given our intentional design of clear menu options, minimum number of buttons and intuitive layout. 
+				The results from user testing aligned with our expectations and turned out to be very positive. One common thing they all mentioned was that the website is easy to navigate, simple, clear and 
+				well-put together. When watching their interactions with our site, we recognized that they all liked its modern and personal feel and appreciated its clear layout.</p>
+			<p>With respect to the sub-tasks, the users not only found all four tasks easy to complete, but were also confident that they had completed the tasks successfully. The durations of time they spent on each task 
+				were very similar and no one seemed to struggle with a particular task. Though none of the users made an error, there were few moments when some users felt slightly unsure about their actions. </p>
+		</div>
+
+		<div class="row testing-content mt-2">
+			<div class="col col-6">
+				<img class="user-testing" src="images/user_comment.png" alt="user testing analysis">
+			</div>
+
+			<div class="col col-6">
+				<img class="user-testing" src="images/sub-task_performance.png" alt="sub task performance">
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid sub-section">
+		<div class="row justify-content-center section-content">
+			<h4 class="mt-4 mb-3"><b><i>Conclusion</i></b></h4>
+		</div>
+		<div class="row section-content">
+			<p>This project was an invaluable opportunity for us to practice the entire iterative design process, from ideation, wire framing, prototyping, to evaluation. 
+				By merging everyone’s differing sketches and making improvements based on critiques from classmates and industry experts, we learned various good practices 
+				of designing a clear, intuitive interface such as the importance of a coherent visual identity and clear navigation. Moreover, based on the user’s performance 
+				and feedback, we would like to make the following improvements to our interface in the future:</p>
+		</div>
+		<div class="row section-content">
+			<ol style="margin-left: 1vw;">
+				<li>Change the “See More” button to “See Events” which will better inform the users about the page they will be directed to</li>
+				<li>Change the “Account” tab to “My Profile” which might better distinguish from “Analytics”</li>
+				<li>Add a pop-up window which shows up whenever the users sign up for a particular event, asking them to confirm their registration</li>
+				<li>Add a page for “My Schedule” which will make it easier for the users to keep track of all the upcoming and past events they will and have participated in</li>
+			</ol>
+		</div>
+	</div>
+
+
+     <div class="container-fluid footer text-center">
+      <h5><b>Let's connect!</b></h5>
+      <div class="container mb-2">
+        <i class="fa fa-instagram" style="margin-right: 0.5vw;"></i>
+        <i class="fa fa-linkedin" style="margin-right: 0.5vw;"></i>
+        <i class="fa fa-envelope" style="margin-right: 0.5vw;"></i>
+      </div>
+      <p style="margin-bottom: 0">Made with <span style="color: red">&#128150;</span></p>  
+    </div>
+
+	</main>
+  </body>
+</html>
