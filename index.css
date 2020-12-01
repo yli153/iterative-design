@@ -32,8 +32,12 @@ a {
     color: grey !important;
 }
 
-h1 {
+h1{
     display: inline;
+}
+
+h5 {
+    color: darkblue !important;
 }
 
 .navbar {
@@ -166,7 +170,7 @@ h1 {
 }
 
 .sketch{
-	width: 80%;
+	width: 100%;
 }
 
 .hifi{
@@ -178,6 +182,41 @@ h1 {
 .user-testing {
 	width: 100%;
 	height: auto;
+}
+
+.emojis {
+    font-size: 2.5vw;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-name {
+        font-size: 30px;
+    }
+
+    .sub-section {
+        padding-left: 10vw; 
+        padding-right: 10vw; 
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+    }
+
+    .intro {
+        padding-left: 10vw; 
+        padding-right: 10vw; 
+    }
+
+    .emojis {
+        font-size: 20px;
+    }
+
+    .fa {
+        font-size: 20px !important;
+    }
+
+    .hifi {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
